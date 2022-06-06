@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Demo form</h1>
+    </header>
+    <main>
+        <form action="" method="GET">
+            <section>
+                <label for="user-name">Your name</label>
+                <input type="text" name="user-name" id="user-name" required>
+                
+                <label for="useremail">Your email adress</label>
+                <input type="email" name="user-email" id="useremail" required>
+                
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required minlength="8">
+            </section>
+            
+            <label for="textarea">Enter text here</label>
+            <textarea name="textarea" id="textarea" ></textarea>
+            
+            
+            <label for="user-age">Your age</label required min="18">
+            <input type="number" name="Age" id="user-age">
+            
+            
+            <label for="user-date">Date</label>
+            <input type="date" name="date" id="user-date">
+            <hr>
+            
+            <label for="favourite-color">
+                choose your favourite color
+            </label>
+            <select name="favourite-color" id="favourite-color">
+                <option value="Blue">Blue</option>
+                <option value="black">Black</option>
+                <option value="purple">Purple</option>
+            </select>
+            <h2>How would you like to verify the account</h2>
+            <div class="form-control-inline">
+                <input type="radio" id="verify-sms" name="verify" value="1">
+            <label for="verify-sms">Via text message (SMS)</label>
+        </div>
+        <div class="form-control-inline">
+            <input type="radio" id="verify-phone" name="verify" value="2">
+            <label for="verify-phone">Via phone call</label>
+        </div>
+        <div class="form-control-inline">
+            <input type="radio" id="verify-email" name="verify" value="3">
+            <label for="verify-email">Via email</label>
+        </div> 
+        <div class="form-control-inline">
+            <input type="checkbox" id="agree-terms" name="terms">
+            <label for="agree-terms">agree to terms</label>
+        </div>
+        
+        <button>Submit</button>
+    </main>
+    </form>
+</body>
+
+</html>
