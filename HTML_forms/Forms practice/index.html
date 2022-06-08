@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+
+    <title>Contact us</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact us</h1>
+    </header>
+    <main>
+        <form action="" method="GET">
+
+            <!-- input boxes -->
+            <ul>
+                <h2>How can we help you?</h2>
+                <li>
+                    <label for="texty"> Your Name</label>
+                    <input type="text" id="texty" name="yourname" required>
+                </li>
+                <li>
+                    <label for="emaily">Your E-mail Adress</label>
+                    <input type="email" id="emaily" name="youremail" required>
+                </li>
+                <li>
+                    <label for="phone-number">Your Phone Number</label>
+                    <input type="number" id="phone-number" name="yournumber" required minlength="8">
+                </li>
+                <label for="textarea">Your Message</label>
+                <textarea name="textarea" id="textarea" name="comment" maxlength="200"></textarea>
+                <li>
+                    <label for="dropdown">How did you find us?</label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="1">Web search</option>
+                        <option value="2">Friend recomendation</option>
+                        <option value="3">Google ads</option>
+                        <option value="4">Other</option>
+                    </select>
+                </li>
+            </ul>
+            <!-- boolean checkers -->
+            <section id="reply-section">
+
+                <h2>How should we reply?</h2>
+
+                <div class="form-control-inline">
+                    <input type="radio" id="verify-sms" name="verify" value="0" required>
+                    <label for="verify-sms">Hey, I just met you and this is crazy</label>
+                </div>
+                <div class="form-control-inline">
+                    <input type="radio" id="verify-sms" name="verify" value="1" required>
+                    <label for="verify-sms">Call me maybe</label>
+                </div>
+                <div class="form-control-inline">
+                    <input type="radio" id="verify-phone" name="verify" value="2" required>
+                    <label for="verify-phone">Send me an email</label>
+                </div>
+                <div class="form-control-inline">
+                    <input type="radio" id="verify-email" name="verify" value="3" required>
+                    <label for="verify-email">Don't reply</label>
+                </div>
+                <div class="form-control-inline">
+                    <input type="checkbox" id="agree-terms" name="terms" required>
+                    <label for="agree-terms">Accept Terms</label>
+                </div>
+                <!-- buttons -->
+                <div>
+                    <button name="reset" id="clear-button">Clear</button>
+                    <button name="submit" id="submit-button">Submit</button>
+                </div>
+            </section>
+        </form>
+    </main>
+</body>
+
+</html>
